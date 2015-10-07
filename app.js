@@ -14,6 +14,7 @@ $(document).ready(function() {
 
     $('form').on('submit', function(e) {
       e.preventDefault();
+      //add loading GIF
       $.post('https://protected-lake-8698.herokuapp.com/api/subscribe', email).then(function(data) {
         console.log(data);
         $('#div1 h2').text(data.title)
