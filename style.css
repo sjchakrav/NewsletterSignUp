@@ -1,3 +1,6 @@
+.container {
+  text-align: absolute;
+}
 .form-group { position: relative; }
 .form-control { border-radius: 0; }
 .error { color: #b30000; }
