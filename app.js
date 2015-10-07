@@ -5,25 +5,17 @@ $(function(){
     e.preventDefault();
     formData = form.serialize();
 
-    var proccedName = true;
     var proccedEmail = true;
-    var proccedText = true;
 
-    var name = $("input[name='name']");
+
     var email = $("input[name='email']");
-    var text = $("textarea[name='message']");
 
-    var errorName = '<i class="fa fa-exclamation"><span>Enter valid name</span></i>';
+
+
     var errorEmail = '<i class="fa fa-exclamation"><span>Enter valid email</span></i>';
-    var errorText = '<i class="fa fa-exclamation"><span>Enter valid message</span></i>';
 
-    if(!name.val() == ""){
-      proccedName = true;
-      name.siblings('.fa').remove();
-    }else {
-      proccedName = false;
-      name.parent().append(errorName);
-    }
+
+
 
     if(!email.val() == "" && email.val().indexOf(".com") >= 0 ){
       proccedEmail = true;
@@ -33,14 +25,8 @@ $(function(){
       proccedEmail = false;
     }
 
-    if(!text.val() == ""){
-      proccedText = true;
-      text.siblings('.fa').remove();
-    }else {
-      text.parent().append(errorText);
-      proccedText = false;
-    }
-    if(proccedName == true && proccedEmail == true && proccedText == true ){
+
+    if(proccedEmail == true){
       $.ajax({
         type: 'POST',
         url: form.attr('action'),
