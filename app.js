@@ -1,14 +1,13 @@
-var formSubmitted = false,
-valid = false;
-
-var email;
-
-
-$('.msg').hide();
-
 $(document).ready(function() {
   // Regex for Validation
-  $('form input[name="email"]').on('keyup keypress blur change', function () {
+  var formSubmitted = false;
+  var valid = false;
+  var email;
+
+  $('.msg').hide();
+  $('#loading-spinner').hide();
+
+  $('form input[name="email"]').on('input', function () {
     email = $(this).val();
     var re = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}/igm;
     if (re.test(email)) {
@@ -28,14 +27,21 @@ $(document).ready(function() {
       //add loading GIF here
 
       if(valid && !formSubmitted) {
+        $('#loading-spinner').show();
+        $('form button').hide();
           console.log(email);
         formSubmitted = true;
-        $.post('https://protected-lake-8698.herokuapp.com/api/subscribe', email).then(function(data) {
+        $.post('https://protected-lake-8698.herokuapp.com/api/subscribe', {email:email}).then(function(data) {
           formSubmitted = false;
           console.log(data);
-          $('#div1 h2').text(data.title)
-        }).fail(function() {
-          console.log('error!');
+        }).fail(function(error) {
+          console.log('error!', JSON.parse(error.responseText).message);
+          $('#msg').text(JSON.parse(error.responseText).message);
+          $('#msg').show();
+        })
+        .always(function() {
+          $('#loading-spinner').hide();
+          $('form button').show();
         });
       }
     });
