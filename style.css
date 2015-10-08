@@ -66,5 +66,8 @@
  }
 
  .btn  {
-  background-color: gray;
  }
+
+ .btn-primary[disabled], .btn-primary[disabled]:hover {
+  background-color: gray;
+ };

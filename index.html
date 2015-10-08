@@ -1,7 +1,7 @@
 <html>
 
 <head>
-<script src="jquery-2.1.0.min.js"></script>
+<script src="jquery.js"></script>
 <script src="app.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <link rel="stylesheet" href="style.css">
@@ -11,13 +11,14 @@
 <div class="container">
   <div class="row">
     <div class=col-md-6>
-      <form id="" method="post" action="" >
+      <div id="msg"></div>
+      <form id="form" method="post" action="" >
         <div class="form-group">
           <label for="email">Newsletter Sign Up</label>
-          <input type="email" class="form-control" data-required="false"  name="email" size="20" maxlength="40" placeholder="Enter your email...">
+          <input type="email" class="form-control" data-required="false" id="email" name="email" size="20" maxlength="40" placeholder="Enter your email...">
         </div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" disabled>Submit</button>
       </form>
     </div>
 
