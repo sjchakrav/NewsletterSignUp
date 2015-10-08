@@ -6,6 +6,7 @@ $(document).ready(function() {
       if (re.test(email)) {
           $('.msg').hide();
           $('.success').show();
+          $('.btn btn-primary').addClass("selected");
       } else {
       $('.msg').hide();
       $('.error').show();
@@ -14,7 +15,7 @@ $(document).ready(function() {
 
     $('form').on('submit', function(e) {
       e.preventDefault();
-      //add loading GIF
+      //add loading GIF here
       $.post('https://protected-lake-8698.herokuapp.com/api/subscribe', email).then(function(data) {
         console.log(data);
         $('#div1 h2').text(data.title)

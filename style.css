@@ -1,3 +1,6 @@
+.selected {
+  color: blue;
+}
 .container {
   text-align: absolute;
 }
@@ -60,4 +63,8 @@
   left: 50%;
   margin-left: -200px;
   top: 200px;
+ }
+
+ .btn  {
+  background-color: gray;
  }
