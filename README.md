@@ -1,5 +1,5 @@
 # NewsletterSignUp
-jQuery/Ajax
+jQuery/Ajax ->
 
 
 [x] 1. Form takes user email

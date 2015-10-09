@@ -25,9 +25,8 @@ $(document).ready(function() {
 
   $('form').on('submit', function(e) {
     e.preventDefault();
-      //add loading GIF here
-
       if(valid && !formSubmitted) {
+         //add loading GIF here
         $('#loading-spinner').show();
         $('form button').hide();
           console.log(email);
