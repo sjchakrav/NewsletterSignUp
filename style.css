@@ -1,3 +1,11 @@
+.email-input {
+  width: 300px;
+}
+
+.center-it {
+  margin: 0 auto;
+}
+
 .selected {
   color: blue;
 }
@@ -71,3 +79,24 @@
  .btn-primary[disabled], .btn-primary[disabled]:hover {
   background-color: gray;
  };
+
+body {
+    background-color: lightblue;
+}
+
+.form-box {
+    width: 50%;
+    margin: auto;
+    padding-top:20px;
+}
+
+.form-box h1 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: tomato;
+}
+
+.form-box h1 span {
+    font-weight: lighter;
+}

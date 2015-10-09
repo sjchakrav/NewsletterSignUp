@@ -8,20 +8,31 @@
 <link rel="stylesheet" href="toastr.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="form-box">
 
-<div class="container">
-  <div class="row">
-    <div class=col-md-6>
-      <div id="msg"></div>
-      <form id="form" method="post" action="" >
-        <div class="form-group">
-          <label for="email">Newsletter Sign Up</label>
-          <input type="email" class="form-control" data-required="false" id="email" name="email" size="20" maxlength="40" placeholder="Enter your email...">
+            <h1>Form <span>Registration</span></h1>
+            <form role="form" id="form">
+              <div id="msg"></div>
+              <div class="form-group">
+                <div id="emailError" class="sr-only" role="alert"></div>
+                <label for="form-email-field" class="sr-only">Email</label>
+                <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
+                    <input type="email" class="form-control email-input" id="email" name="email" value="" placeholder="Enter your email...">
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary" disabled>Submit</button>
+              <img id="loading-spinner" src="loading.gif" />
+          </form>
         </div>
-        <button type="submit" class="btn btn-primary" disabled>Submit</button>
-        <img id="loading-spinner" src="loading.gif" />
-      </form>
+      </div>
     </div>
 
 
+
+
+  </body>
 </html>
