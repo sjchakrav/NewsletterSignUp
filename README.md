@@ -7,8 +7,8 @@ jQuery/Ajax
 [x] 3. Set submit button to grey until user enters a valid email
 [x] 4. Set submit button to blue when user has entered a valid email
 [x] 5. show loading graphic when waiting for the API
-[ ] 6. Handle error responses from API with an error message
-[ ] 7. Handle success responses from API with a ‘thank you’ message
+[x] 6. Handle error responses from API with an error message
+[x] 7. Handle success responses from API with a ‘thank you’ message
 
 API endpoint:
 type: 'POST',

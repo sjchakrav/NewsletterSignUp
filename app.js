@@ -32,16 +32,14 @@ $(document).ready(function() {
           console.log(email);
         formSubmitted = true;
         $.post('https://protected-lake-8698.herokuapp.com/api/subscribe', {email:email}).then(function(data) {
-          formSubmitted = false;
-          console.log(data);
+          toastr.success(data.message, 'Thank you');
         }).fail(function(error) {
-          console.log('error!', JSON.parse(error.responseText).message);
-          $('#msg').text(JSON.parse(error.responseText).message);
-          $('#msg').show();
+          toastr.error(JSON.parse(error.responseText).message, 'Error!');
         })
         .always(function() {
           $('#loading-spinner').hide();
           $('form button').show();
+          formSubmitted = false;
         });
       }
     });
