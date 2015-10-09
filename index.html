@@ -1,38 +1,993 @@
 <html>
-
 <head>
-<script src="jquery.js"></script>
-<script src="app.js"></script>
-<script src="toastr.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<link rel="stylesheet" href="toastr.min.css">
-<link rel="stylesheet" href="style.css">
+  <script src="jquery.js"></script>
+  <script src="app.js"></script>
+  <script src="toastr.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="toastr.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="http://s.huffpost.com/assets/css.php?v=1444146469&f=verticals%2Fhomepage.css%2Cfrontpage.css%2Cfonts%2Fopensans-condbold%2Fstylesheet.css%2Ctopnav_new%2Fall_pages.css%2Ctopnav_new%2Ftop_nav.css%2Ctopnav_new%2Fmodule.edition_nav.css%2Cbasic.css%2Cverticals%2Fcolor_scheme.css%2Cadd%2Ffront.css%2Cbuttons.css%2Cmost_popular.css">
 </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class="form-box">
+<body>
+  <div class="container">
+    <div class="row">
+        <h1 class="title">THE HUFFINGTON POST</h1>
 
-            <h1>Form <span>Registration</span></h1>
-            <form role="form" id="form">
-              <div id="msg"></div>
-              <div class="form-group">
-                <div id="emailError" class="sr-only" role="alert"></div>
-                <label for="form-email-field" class="sr-only">Email</label>
-                <div class="input-group">
-                    <div class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></div>
-                    <input type="email" class="form-control email-input" id="email" name="email" value="" placeholder="Enter your email...">
+  <div class="top_nav_menu custom-top-nav" id="top_nav">
+    <div class="topnav_first_row relative clearfix topnav_first_row_squre_right" data-beacon="{&quot;p&quot;:{&quot;mnid&quot;:&quot;topnav_first_row&quot;,&quot;mlid&quot;:&quot;topnav&quot;}}" id="topnav_top">
+      <script type="text/javascript">
+huff.emit('topnav/load-start', document.getElementById('topnav_top'));
+      </script>
+
+      <ul class="jd_menu jd_menu_slate star_for_local">
+        <li class="n_home first" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;homepage&quot;}}" id="li_homepage">
+          <a href="http://www.huffingtonpost.com/" title="Home">FRONT PAGE</a>
+        </li>
+
+        <li class="n_politics n_empty" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;politics&quot;}}" id="li_politics">
+          <div class="relative">
+            <a class="topnav_tab_link" href="http://www.huffingtonpost.com/politics/">Politics</a>
+
+            <div class="menu absolute">
+              <div class="menu_h clearfix">
+                <div class="trending" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;trending&quot;}}">
+                  <!-- last update is 20150905_080009 -->
+
+                  <ul>
+                    <li data-beacon="{&quot;p&quot;:{&quot;plid&quot;:8076052}}" id="id_trending_8076052">
+                      <a href="http://www.huffingtonpost.com/2015/09/02/the-morning-email_n_8076052.html?ir=Politics">Wednesday's Morning Email: Jeb Goes After Trump</a>
+                    </li>
+
+                    <li class="vertical_info">
+                      <div class="float_right social_widget">
+                        <div class="i_v_fb_like like_fb_like_action i_v_with_count"></div>
+                      </div><a href="http://www.huffingtonpost.com/politics/">Go to Politics<span class="arrow"><span></span></span></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="more_box">
+                  <strong class="title">More in Politics</strong>
+
+                  <ul class="vertical_list" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;more_in&quot;}}">
+                    <li>
+                      <a href="http://elections.huffingtonpost.com/pollster">Pollster</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/news/huffpolitics-blog/">Politics Blog</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.offthebus.org">Off The Bus</a>
+                    </li>
+
+                    <li>
+                      <a href="http://elections.huffingtonpost.com/">Election Maps</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/news/trail-to-the-chief/">Trail To The Chief</a>
+                    </li>
+                  </ul><strong class="title">You might also like</strong>
+
+                  <ul class="like_list" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;like_list&quot;}}">
+                    <li>
+                      <a href="http://www.huffingtonpost.com/world/">WorldPost</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/green/">Green</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/black-voices/">Black Voices</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/latino-voices/">Latino Voices</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/gay-voices/">Gay Voices</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
-              <button type="submit" class="btn btn-primary" disabled>Submit</button>
-              <img id="loading-spinner" src="loading.gif" />
-          </form>
-        </div>
-      </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="n_business n_empty" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;business&quot;}}" id="li_business">
+          <div class="relative">
+            <a class="topnav_tab_link" href="http://www.huffingtonpost.com/business/">Business</a>
+
+            <div class="menu absolute">
+              <div class="menu_h clearfix">
+                <div class="trending" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;trending&quot;}}">
+                  <!-- last update is 20150904_001503 -->
+
+                  <ul>
+                    <li data-beacon="{&quot;p&quot;:{&quot;plid&quot;:7460538}}" id="id_trending_7460538">
+                      <a href="http://www.huffingtonpost.com/suzanne-grossman/online-job-search-tips_b_7460538.html?ir=Business">These Often-Overlooked Tips Will Revolutionize Your Online Job Hunting</a>
+                    </li>
+
+                    <li class="vertical_info">
+                      <div class="float_right social_widget">
+                        <div class="i_v_fb_like like_fb_like_action i_v_with_count"></div>
+                      </div><a href="http://www.huffingtonpost.com/business/">Go to Business<span class="arrow"><span></span></span></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="more_box">
+                  <strong class="title">More in Business</strong>
+
+                  <ul class="vertical_list" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;more_in&quot;}}">
+                    <li>
+                      <a href="http://www.huffingtonpost.com/small-business/">Small Biz</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/money/">Money</a>
+                    </li>
+                  </ul><strong class="title">You might also like</strong>
+
+                  <ul class="like_list" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;like_list&quot;}}">
+                    <li>
+                      <a href="http://www.huffingtonpost.com/world/">WorldPost</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/technology/">Tech</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/media/">Media</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/arts/">Arts</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/sports/">Sports</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/weird-news/">Weird News</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/news/smarter-ideas/">Smarter Ideas</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/news/urban_progress/">Urban Progress</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="n_entertainment n_empty" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;entertainment&quot;}}" id="li_entertainment">
+          <div class="relative">
+            <a class="topnav_tab_link" href="http://www.huffingtonpost.com/entertainment/">Entertainment</a>
+
+            <div class="menu absolute">
+              <div class="menu_h clearfix">
+                <div class="trending" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;trending&quot;}}">
+                  <!-- last update is 20150905_000506 -->
+
+                  <ul>
+                    <li data-beacon="{&quot;p&quot;:{&quot;plid&quot;:7657122}}" id="id_trending_7657122">
+                      <a href="http://www.huffingtonpost.com/2015/09/02/rate-sanity-scale_n_7657122.html?ir=Entertainment">The Mad-Genius Effect: How 9 Legendary Minds Rate On The Sanity Scale</a>
+                    </li>
+
+                    <li class="vertical_info">
+                      <div class="float_right social_widget">
+                        <div class="i_v_fb_like like_fb_like_action i_v_with_count"></div>
+                      </div><a href="http://www.huffingtonpost.com/entertainment/">Go to Entertainment<span class="arrow"><span></span></span></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="more_box">
+                  <strong class="title">More in Entertainment</strong>
+
+                  <ul class="vertical_list" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;more_in&quot;}}">
+                    <li>
+                      <a href="http://www.huffingtonpost.com/celebrity/">Celebrity</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/tv/">TV</a>
+                    </li>
+                  </ul><strong class="title">You might also like</strong>
+
+                  <ul class="like_list" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;like_list&quot;}}">
+                    <li>
+                      <a href="http://www.huffingtonpost.com/comedy/">Comedy</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/arts/">Arts</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/books/">Books</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/food/">Food</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/style/">Style</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/weird-news/">Weird News</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.moviefone.com/">Moviefone</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="n_technology n_empty" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;technology&quot;}}" id="li_technology">
+          <div class="relative">
+            <a class="topnav_tab_link" href="http://www.huffingtonpost.com/technology/">Tech</a>
+
+            <div class="menu absolute">
+              <div class="menu_h clearfix">
+                <div class="trending" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;trending&quot;}}">
+                  <!-- last update is 20150903_093504 -->
+
+                  <ul>
+                    <li data-beacon="{&quot;p&quot;:{&quot;plid&quot;:8062868}}" id="id_trending_8062868">
+                      <a href="http://www.huffingtonpost.com/lisa-abeyta/when-women-are-the-proble_b_8062868.html?ir=Technology">When Women Are the Problem for Women in Tech<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">17</span></span></a>
+                    </li>
+
+                    <li class="vertical_info">
+                      <div class="float_right social_widget">
+                        <div class="i_v_fb_like like_fb_like_action i_v_with_count"></div>
+                      </div><a href="http://www.huffingtonpost.com/technology/">Go to Tech<span class="arrow"><span></span></span></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="more_box">
+                  <strong class="title">More in Tech</strong>
+
+                  <ul class="vertical_list" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;more_in&quot;}}">
+                    <li>
+                      <a href="http://www.huffingtonpost.com/tedweekends/">TEDWeekends</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/news/social-media/">Social Media</a>
+                    </li>
+                  </ul><strong class="title">You might also like</strong>
+
+                  <ul class="like_list" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;like_list&quot;}}">
+                    <li>
+                      <a href="http://www.huffingtonpost.com/small-business/">Small Biz</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/green/">Green</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/science/">Science</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/new-york/">NY</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/san-francisco/">SF</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/news/smarter-ideas/">Smarter Ideas</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.techcrunch.com">TechCrunch</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.engadget.com">Engadget</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="n_media n_empty" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;media&quot;}}" id="li_media">
+          <div class="relative">
+            <a class="topnav_tab_link" href="http://www.huffingtonpost.com/media/">Media</a>
+
+            <div class="menu absolute">
+              <div class="menu_h clearfix">
+                <div class="trending" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;trending&quot;}}">
+                  <!-- last update is 20150830_121508 -->
+
+                  <ul>
+                    <li data-beacon="{&quot;p&quot;:{&quot;plid&quot;:8049548}}" id="id_trending_8049548">
+                      <a href="http://www.huffingtonpost.com/amy-mueller/amir-hekmati-american-imprisoned-in-iran_b_8049548.html?ir=Media">How Social Media Has Helped Amir Hekmati, an American Imprisoned in Iran</a>
+                    </li>
+
+                    <li class="vertical_info">
+                      <div class="float_right social_widget">
+                        <div class="i_v_fb_like like_fb_like_action i_v_with_count"></div>
+                      </div><a href="http://www.huffingtonpost.com/media/">Go to Media<span class="arrow"><span></span></span></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="more_box">
+                  <strong class="title">More in Media</strong>
+
+                  <ul class="vertical_list" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;more_in&quot;}}">
+                    <li>
+                      <a href="http://www.huffingtonpost.com/news/eat-the-press/">Eat The Press</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/news/the-backstory/">Calderone: The Backstory</a>
+                    </li>
+                  </ul><strong class="title">You might also like</strong>
+
+                  <ul class="like_list" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;like_list&quot;}}">
+                    <li>
+                      <a href="http://www.huffingtonpost.com/entertainment/">Entertainment</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/tv/">TV</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/comedy/">Comedy</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/arts/">Arts</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/books/">Books</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/religion/">Religion</a>
+                    </li>
+
+                    <li>
+                      <a href="http://moviefone.com">Moviefone</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="n_world n_empty" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;world&quot;}}" id="li_world">
+          <div class="relative">
+            <a class="topnav_tab_link" href="http://www.huffingtonpost.com/theworldpost/">WorldPost</a>
+
+            <div class="menu absolute right_align">
+              <div class="menu_h clearfix">
+                <div class="trending" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;trending&quot;}}">
+                  <!-- last update is 20150904_144508 -->
+
+                  <ul>
+                    <li data-beacon="{&quot;p&quot;:{&quot;plid&quot;:8068132}}" id="id_trending_8068132">
+                      <a href="http://www.huffingtonpost.com/scott-warren/south-africa-immigration-apartheid_b_8068132.html?ir=WorldPost">A New Apartheid: South Africa's Struggle With Immigration</a>
+                    </li>
+
+                    <li class="vertical_info">
+                      <div class="float_right social_widget">
+                        <div class="i_v_fb_like like_fb_like_action i_v_with_count"></div>
+                      </div><a href="http://www.huffingtonpost.com/theworldpost/">Go to WorldPost<span class="arrow"><span></span></span></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="more_box">
+                  <strong class="title">More in WorldPost</strong>
+
+                  <ul class="vertical_list" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;more_in&quot;}}">
+                    <li>
+                      <a href="http://www.huffingtonpost.com/news/foreign-affairs/">Foreign Affairs</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/news/drug-war">Drug War</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/news/afghanistan-war-blog/">Afghanistan</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/news/syria/">Syria Conflict</a>
+                    </li>
+
+                    <li>
+                      <a href="http://videos.huffingtonpost.com/world">World Videos</a>
+                    </li>
+                  </ul><strong class="title">You might also like</strong>
+
+                  <ul class="like_list" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;like_list&quot;}}">
+                    <li>
+                      <a href="http://www.huffingtonpost.com/travel/">Travel</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/politics/">Politics</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/business/">Business</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/technology/">Tech</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/religion/">Religion</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="n_healthy-living n_empty" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;healthy-living&quot;}}" id="li_healthy-living">
+          <div class="relative">
+            <a class="topnav_tab_link" href="http://www.huffingtonpost.com/healthy-living/">Healthy Living</a>
+
+            <div class="menu absolute right_align">
+              <div class="menu_h clearfix">
+                <div class="trending" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;trending&quot;}}">
+                  <!-- last update is 20150904_104505 -->
+
+                  <ul>
+                    <li data-beacon="{&quot;p&quot;:{&quot;plid&quot;:8071238}}" id="id_trending_8071238">
+                      <a href="http://www.huffingtonpost.com/details/researchers-just-found-th_b_8071238.html?ir=Healthy+Living">Researchers Found The Easiest Way To Help You Lose Weight<span class="comments" data-anchor="#comments"><span class="talkbubble"><span></span></span><span class="comments-count">57</span></span></a>
+                    </li>
+
+                    <li class="vertical_info">
+                      <div class="float_right social_widget">
+                        <div class="i_v_fb_like like_fb_like_action i_v_with_count"></div>
+                      </div><a href="http://www.huffingtonpost.com/healthy-living/">Go to Healthy Living<span class="arrow"><span></span></span></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="more_box">
+                  <strong class="title">More in Healthy Living</strong>
+
+                  <ul class="vertical_list" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;more_in&quot;}}">
+                    <li>
+                      <a href="http://www.huffingtonpost.com/gps-for-the-soul/">GPS for the Soul</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/health-fitness/">Health And Fitness</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/health-news/">Health News</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/news/becoming-fearless/">Becoming Fearless</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/news/sleep/">Sleep</a>
+                    </li>
+                  </ul><strong class="title">You might also like</strong>
+
+                  <ul class="like_list" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;like_list&quot;}}">
+                    <li>
+                      <a href="http://www.huffingtonpost.com/food/">Food</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/50/">Post 50</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/taste/">Taste</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/religion/">Religion</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/own/">OWN</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="n_comedy n_empty" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;comedy&quot;}}" id="li_comedy">
+          <div class="relative">
+            <a class="topnav_tab_link" href="http://www.huffingtonpost.com/comedy/">Comedy</a>
+
+            <div class="menu absolute right_align">
+              <div class="menu_h clearfix">
+                <div class="trending" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;trending&quot;}}">
+                  <!-- last update is 20150831_085502 -->
+
+                  <ul>
+                    <li data-beacon="{&quot;p&quot;:{&quot;plid&quot;:8050264}}" id="id_trending_8050264">
+                      <a href="http://www.huffingtonpost.com/-lily-karlin/date-historys-powerful-men-today_b_8050264.html?ir=Comedy">What It Would Be Like To Date History's Most Powerful Men Today</a>
+                    </li>
+
+                    <li class="vertical_info">
+                      <div class="float_right social_widget">
+                        <div class="i_v_fb_like like_fb_like_action i_v_with_count"></div>
+                      </div><a href="http://www.huffingtonpost.com/comedy/">Go to Comedy<span class="arrow"><span></span></span></a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="more_box">
+                  <strong class="title">More in Comedy</strong>
+
+                  <ul class="vertical_list" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;more_in&quot;}}">
+                    <li>
+                      <a href="http://www.huffingtonpost.com/news/funny-videos/">Funny Videos</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/news/comedy-club/">Comedy Club</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/news/political-humor/">Political Humor</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/news/comedy-original-video/">Original Video</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/news/crossing-the-line/">Crossing The Line</a>
+                    </li>
+                  </ul><strong class="title">You might also like</strong>
+
+                  <ul class="like_list" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;like_list&quot;}}">
+                    <li>
+                      <a href="http://www.huffingtonpost.com/entertainment/">Entertainment</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/tv/">TV</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/weird-news/">Weird News</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/college/">College</a>
+                    </li>
+
+                    <li>
+                      <a href="http://www.huffingtonpost.com/arts/">Arts</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="n_live" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;live&quot;}}" id="tn-live">
+          <div class="relative">
+            <a href="http://live.huffingtonpost.com/">HUFFPOST LIVE</a>
+
+            <div class="menu absolute right_align">
+              <div class="menu_h clearfix">
+                <div class="trending tn-hp-live" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;trending&quot;}}">
+                  <ul>
+                    <li class="vertical_info">
+                      <a class="link-to-hp-live" href="http://live.huffingtonpost.com/">Go to HuffPost Live<span class="arrow"><span></span></span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="n_all_sections last" data-beacon="{&quot;p&quot;:{&quot;lnid&quot;:&quot;all-sections&quot;}}" id="all-sections">
+          <div class="relative">
+            <a href="javascript:void(0);">ALL SECTIONS <span class="arrow-down"></span></a>
+
+            <div class="menu absolute white_bg right_align">
+              <div class="columns clearfix">
+                <div class="column">
+                  <strong class="title">News</strong>
+
+                  <div class="vert_holder">
+                    <ul class="all_sections_section">
+                      <li>
+                        <a href="http://www.huffingtonpost.com/politics/">Politics</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/theworldpost/">WorldPost</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/business/">Business</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/media/">Media</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/sports/">Sports</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/education/">Education</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/crime/">Crime</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/weird-news/">Weird News</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/good-news/">Good News</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <strong class="title">Entertainment</strong>
+
+                  <div class="vert_holder">
+                    <ul class="all_sections_section">
+                      <li>
+                        <a href="http://www.huffingtonpost.com/entertainment/">Entertainment</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/celebrity/">Celebrity</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/comedy/">Comedy</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/arts/">Arts &amp; Culture</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/books/">Books</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/tv/">TV</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <strong class="title">Life &amp; Style</strong>
+
+                  <div class="vert_holder">
+                    <ul class="all_sections_section">
+                      <li>
+                        <a href="http://www.huffingtonpost.com/healthy-living/">Healthy Living</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/gps-for-the-soul/">GPS for the Soul</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/style/">Style</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/home/">Home</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/taste/">Taste</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/weddings/">Weddings</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/travel/">Travel</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/parents/">Parents</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/divorce/">Divorce</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/50/">Huff/Post 50</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/marlothomas/">Marlo Thomas</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/own/">OWN</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/drphil/">Dr. Phil</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/news/quiet-revolution/">Quiet Revolution</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <strong class="title">Tech &amp; Science</strong>
+
+                  <div class="vert_holder">
+                    <ul class="all_sections_section">
+                      <li>
+                        <a href="http://www.huffingtonpost.com/tech/">Tech</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/science/">Science</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/green/">Green</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <strong class="title">Voices</strong>
+
+                  <div class="vert_holder">
+                    <ul class="all_sections_section">
+                      <li>
+                        <a href="http://www.huffingtonpost.com/women/">Women</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/black-voices/">Black Voices</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/latino-voices/">Latino Voices</a>
+                      </li>
+
+                      <li>
+                        <a href="http://voces.huffingtonpost.com/">Voces (en español)</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/gay-voices/">Gay Voices</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/religion/">Religion</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/college/">College</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/teen/">Teen</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/impact/">Impact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="column">
+                  <strong class="title">Local</strong>
+
+                  <div class="vert_holder">
+                    <ul class="all_sections_section">
+                      <li>
+                        <a href="http://www.huffingtonpost.com/chicago/">Chicago</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/dc/">DC</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/denver/">Denver</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/detroit/">Detroit</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/hawaii/">Hawaii</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/los-angeles/">Los Angeles</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/miami/">Miami</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/new-york/">New York</a>
+                      </li>
+
+                      <li>
+                        <a href="http://www.huffingtonpost.com/san-francisco/">San Francisco</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mobile_app_links clearfix">
+                <strong class="title">Our Mobile Apps</strong>
+
+                <ul class="all_sections_section">
+                  <li>
+                    <a href="https://itunes.apple.com/us/app/the-huffington-post/id306621789?mt=8">iOS App</a>
+                  </li>
+
+                  <li>
+                    <span class="bullet"></span><a href="https://itunes.apple.com/us/app/huffpost-live/id572584499?ls=1&amp;mt=8">HuffPost Live iOS</a>
+                  </li>
+
+                  <li>
+                    <span class="bullet"></span><a href="https://play.google.com/store/apps/details?id=com.huffingtonpost.android&amp;hl=en">Android App</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
 
+    <div class="new-topnav_second_row clearfix" data-beacon="{&quot;p&quot;:{&quot;mnid&quot;:&quot;topnav_subnav&quot;,&quot;mlid&quot;:&quot;topnav&quot;}}" id="topnav_top_row">
+      <div class="featured">
+        <ul>
+          <li>
+            <a class="modal_inner ftd_homepage" href="http://www.huffingtonpost.com/black-voices/">Black Voices</a>
+          </li>
 
+          <li>
+            <a class="modal_inner ftd_homepage" href="http://www.huffingtonpost.com/gay-voices/">Gay Voices</a>
+          </li>
 
+          <li>
+            <a class="modal_inner ftd_homepage" href="http://www.huffingtonpost.com/sports/">Sports</a>
+          </li>
 
-  </body>
+          <li>
+            <a class="modal_inner ftd_homepage" href="http://www.huffingtonpost.com/crime/">Crime</a>
+          </li>
+
+          <li>
+            <a class="modal_inner ftd_homepage" href="http://www.huffingtonpost.com/science/">Science</a>
+          </li>
+
+          <li>
+            <a class="modal_inner ftd_homepage" href="http://www.huffingtonpost.com/religion/">Religion</a>
+          </li>
+
+          <li>
+            <a class="modal_inner ftd_homepage" href="http://www.huffingtonpost.com/style/">Style</a>
+          </li>
+
+          <li>
+            <a class="modal_inner ftd_homepage" href="http://www.huffingtonpost.com/horoscopes/">Horoscopes</a>
+          </li>
+
+          <li>
+            <a class="modal_inner ftd_homepage" href="http://www.huffingtonpost.com/own/">OWN</a>
+          </li>
+
+          <li>
+            <a class="modal_inner ftd_homepage" href="http://www.huffingtonpost.com/drphil/">Dr Phil</a>
+          </li>
+
+          <li>
+            <a class="modal_inner ftd_homepage" href="http://www.huffingtonpost.com/gps-for-the-soul/">GPS for the Soul</a>
+          </li>
+
+          <li>
+            <a class="modal_inner ftd_homepage" href="http://www.huffingtonpost.com/news/whats-working/">What's Working</a>
+          </li>
+
+          <li>
+            <a class="modal_inner ftd_homepage" href="http://www.huffingtonpost.com/news/quiet-revolution/">Quiet Revolution</a>
+          </li>
+
+          <li>
+            <a class="modal_inner ftd_homepage" href="http://highline.huffingtonpost.com/">Highline</a>
+          </li>
+        </ul>
+      </div>
+  </div>
+
+    </div>
+    <div class="row">
+      <p class="instruction">Please enter your email below to subscribe to the Huffington Post Newsletter.
+      </p>
+      <div class="form-box">
+          <form role="form" id="form">
+            <div id="msg" class="text-left"></div>
+            <div class="form-group">
+              <div id="emailError" class="sr-only" role="alert"></div>
+              <label for="form-email-field" class="sr-only">Email</label>
+              <div class="input-group">
+                  <div class="input-group-addon">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                  </div>
+                  <input type="email" class="form-control email-input" id="email" name="email" value="" placeholder="Enter your email...">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" disabled>Submit</button>
+            <img id="loading-spinner" src="loading.gif" />
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
