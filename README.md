@@ -13,4 +13,4 @@ In this project, I used jQuery and Boostrap to implement a newsletter signup for
 # Demo
 ![Screenshot of App](http://i.imgur.com/5uiHXcM.png)
 
-You can try it out [here](http://sanjaychakravorty.com/huff)
+You can try it out [here](https://safe-reaches-2318.herokuapp.com/)
