@@ -1,3 +1,7 @@
+.btn-primary[disabled], .btn-primary[disabled]:hover {
+  background-color: gray;
+}
+
 .title {
     font-family: georgia;
     font-size: 36px;
@@ -16,10 +20,6 @@
 
 .form-box h1 span {
     font-weight: lighter;
-}
-
-.btn-primary[disabled], .btn-primary[disabled]:hover {
-  background-color: gray;
 }
 
 .custom-top-nav {
