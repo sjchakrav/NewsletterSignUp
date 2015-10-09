@@ -11,4 +11,4 @@ In this project, I used jQuery and Boostrap to implement a newsletter signup for
 - [x] 7. Handle success responses from API with a ‘thank you’ message
 
 # Demo
-You can try it out [here](http://sanjaychakravorty.com/)
+You can try it out [here](http://sanjaychakravorty.com/huff)
